@@ -6,7 +6,7 @@ RUN docker-php-ext-install pdo pdo_mysql
 WORKDIR /var/www
 RUN rm -rf /var/www/html
 
-COPY . /var/www
+#COPY . /var/www
 RUN chown -R www-data:www-data /var/www
 
 RUN ln -s public html
